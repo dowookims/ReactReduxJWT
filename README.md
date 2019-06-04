@@ -6,6 +6,13 @@ Redux를 공부하면서 이를 실습하기 위해 만드는 테스팅용 레�
   
   * React
   * Redux
+  * axios
+  * bootstrap
+  * classnames
+  * jwt-decode
+  * react-redux
+  * react-router-dom
+  * redux-thunk
 
 * 백엔드
   * express.js

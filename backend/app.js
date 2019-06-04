@@ -10,9 +10,13 @@ mongoose.connect(config.DB, { useNewUrlParser:true }).then(
 );
 
 const app = express();
+app.use(passport.initialize());
+require('./passport')(passport);
 
 app.use(bodyParser.urlencoded({ extended: false}));
 app.use(bodyParser.json());
+
+app.use('/api/users', users);
 
 app.get('/', function(req, res){
   res.send('hello!');
